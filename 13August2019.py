@@ -9,3 +9,4 @@ def car(pair):
 def cdr(pair):
     return pair(lambda a, b: b)
 
+print(car(cons(2,3)))
