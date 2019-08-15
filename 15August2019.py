@@ -12,4 +12,4 @@ def encoding(a):
     result += encoding(a[1:])
     return result
 
-print(encoding('602'))
+print(encoding('12345'))
