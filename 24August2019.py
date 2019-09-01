@@ -2,7 +2,7 @@ class Logging(object):
     def __init__(self,n):
         self.n = n
         self._order=[]
-        self.curr=0 #to ensure that we can access the elements quickly
+        self.curr=0 
     
     def record(self,order_id):
         if len(self._order)==self.n:
@@ -17,4 +17,6 @@ class Logging(object):
 l=Logging(15)
 for i in range(1,16):
     l.record(i)
-print(l.get_last(3))
+    
+l.record(20)
+print(l.get_last(2))
